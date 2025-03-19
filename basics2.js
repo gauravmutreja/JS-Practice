@@ -1,16 +1,17 @@
 let flag = true
+console.log(flag)
 if (!flag) {
     console.log("Condition Satisfied")
 }
 else {
-    console.log(flag)
     console.log("Condition Not Satisfied")
 }
 
 let i = 0
 do {
     console.log(i)
-} while (i > 10);
+    i++;
+} while (i < 10);
 
 console.log("************************");
 
