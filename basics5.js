@@ -1,6 +1,8 @@
-//String:
+// Strings
+
 //you can write string in single or double quotes
 let day = "Monday "
+let day1 = 'Tuesday'
 //Length of String
 console.log(day.length)
 
@@ -13,16 +15,20 @@ console.log(day[3]) // d
 
 //Split String into arrays
 let splitDays= day.split("n")
-console.log(splitDays[0])
-console.log(splitDays[1])
+console.log("splitDays[0]: "+splitDays[0])
+console.log("splitDays[1]: "+splitDays[1])
 console.log("Length of splitDays[1]: "+splitDays[1].length)
 console.log("Length of splitDays[1] after trim: "+splitDays[1].trim().length)
+console.log("**************************")
 
 //parseInt : to convert string to number
 
 let date = '23' //string type as written in single quotes
 let nextDate = '27'
-console.log(nextDate-date)
+let diffDate = nextDate - date;
+console.log(diffDate);
+console.log("type of diffDate: "+typeof(diffDate));
+console.log("type of (nextDate-date): "+typeof((nextDate-date)));
 let diff = parseInt(nextDate)-parseInt(date) //convert string to number
 console.log("This is the diff in num: "+diff)
 console.log("This is the diff in String: "+diff.toString())// to convert number to String
@@ -33,8 +39,8 @@ let quote = day+ " is a funday today"
 console.log(quote)
 //let val = quote.indexOf("day")
 //console.log("First occurence of day is at index: "+val)
-let val =0
-let count =0
+let val = 0;
+let count =0;
 while(val!=-1){
     val=quote.indexOf("day",val)
     if(val!=-1)
@@ -43,5 +49,3 @@ while(val!=-1){
     }
 }
 console.log("No. of time day is repeated : "+count)
-
-console.log("**************************")
