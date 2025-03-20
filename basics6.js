@@ -1,5 +1,4 @@
-// Object is a collection of Properties
-
+// Objects : Collection of properties and methods
 let person = {
     firstName : "Gaurav",
     lastName : "Sharma",
