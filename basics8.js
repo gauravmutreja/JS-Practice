@@ -7,7 +7,7 @@ console.log(person3.fullName())
 //Parent and child constructor should be same
 //As the first step , call your parent class constructor in child class construtor
 
-class Pet extends Person {
+class Pet extends Person {  
 
     // constructor(firstName, lastName) {
     //     super(firstName, lastName) // calling parent class constructor

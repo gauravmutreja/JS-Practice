@@ -6,20 +6,20 @@ console.log("arr: " + arr);
 var marks = [10, 20, 30, 40, 50] // directly the elements in box braces
 console.log(marks);
 
-
-
 // print 3rd element 
-console.log(marks[2]);
+console.log("print 3rd element:  " + marks[2]);
+
+
 // Update element using index
 arr[2] = 99
-console.log(marks);
+console.log("Update element using index: " + marks);
+
 // Find length of array
-console.log(arr.length)
-console.log("****************")
+console.log("Find length of array: " + arr.length)
 
 // add element at the end
 marks.push(100)
-console.log(marks)
+console.log("Add element at the end:" + marks)
 
 // Remove the last element
 marks.pop()
@@ -42,13 +42,13 @@ marks.splice(2, 0, 3, 4)
 console.log(marks)  // 10,20,3,4,50
 
 // Create a sub array from existing aray using slice(startIndex, lastIndex+1)
-subMarks = arr.slice(3, 6)
+var subMarks = marks.slice(3, 5)
 console.log("SubMarks: " + subMarks)
-console.log("Final array = " + marks)
+console.log("Actual Marks = " + marks)
 
-// Check if element exist in array using includes()
+// Check if element exist in array using includes() and indexOf()
 console.log("Array contains/includes element 50: " + marks.includes(50))
-console.log("Array contains/includes element 60: " + marks.indexOf(60))
+console.log("Find index of 4: " + marks.indexOf(4))
 
 console.log("****************")
 // Traditional way to calculate sum of all elements in array
@@ -58,9 +58,12 @@ for (let i = 0; i < marks.length; i++) {
 }
 console.log("Sum of marks: " + sum)
 
-// Using reduce method
+// Using reduce method : used mostly to add or multiply all elements in an array
+// reduce method takes a callback function with two parameters: accumulator and currentValue
+// accumulator is the sum of all previous values, currentValue is the current element being processed
+// The second parameter of reduce is the initial value of the accumulator, which is 0 in this case
 let total = marks.reduce((sum, eachMark) => sum + eachMark, 0)
-console.log(total)
+console.log("Sum of marks using reduce method: " + total)
 console.log("****************")
 
 // Traditional way to find even numbers in array
@@ -72,10 +75,10 @@ for (let i = 0; i < score.length; i++) {
 }
 console.log("evenScore using traditional method: " + evenScore)
 
-// Using filter method
+// Using filter method : Creates a new array with all elements that pass filtering function
 let evenScore2 = score.filter(eachScore => eachScore % 2 == 0)
+console.log("Orig Score: "+score)
 console.log("evenScore2 using filter method : " + evenScore2)
-
 console.log("****************")
 
 // Traditional way to multiply each even number by 3 and then sum all
@@ -85,8 +88,9 @@ for (let i = 0; i < evenScore.length; i++) {
 }
 console.log("sumOfEvenScore  using traditional method: " + sumEvenScore)  // 12*3 + 14*3 + 16*3 = 18 + 42 + 48 = 108
 
-// Using map method
+// Using map method : Creates a new array with the results of calling a provided function on every element in the calling array
 var mappedEvenScore = evenScore.map(score => score * 3)
+console.log("Orig EvenScore Score: "+score)
 console.log("mappedEvenScoreArray: " + mappedEvenScore)
 console.log("****************")
 

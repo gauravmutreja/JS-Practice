@@ -6,7 +6,7 @@ function add(a, b) {
 let sum = add(2, 3);
 console.log("Sum of two numbers is: " + sum);
 
-//Anonymous function: 
+//Anonymous function: Only annoymous function can be assigned to a variable i.e. 
 let sumOfInteger = function (c, d) {
     return c + d
 }
@@ -23,7 +23,7 @@ console.log(sumOfNum(2, 3));
 //const - cannot be reassinged
 
 //Global level
-var greet = "Morning-Global level"
+var greet = "Morning- lobal level"
 let greeting = "Morning- Global level"
 
 if (1 == 1) { //block level
@@ -33,7 +33,7 @@ if (1 == 1) { //block level
 
 function saySomething() { //function level
     var greet = "Good Night- function level"
-    let greeting = "Good Night-function level"
+    let greeting = "Good Night- function level"
     console.log(greet)
     console.log(greeting)
 }

@@ -6,9 +6,9 @@ let person = {
     fullName : function fullName(){
         return this.firstName+" "+this.lastName;
     },
-    fullNameRev : function(){ //Annonymous way to define function
-        return this.lastName+" "+this.firstName;
-    },
+    fullNameRev : function() { // Anonymous way to define function
+    return this.lastName + " " + this.firstName;
+    }
 
 }
 
@@ -16,13 +16,13 @@ let person = {
 console.log(person.fullName())
 console.log(person.fullNameRev());
 console.log(person["firstName"])
-console.log(person["lastName"])
+console.log(person.lastName) // can access both ways
 console.log(person.age)
 console.log("*******************")
 
 //update value of property
 person.firstName = "Sahil"
-console.log(person["firstName"]) // when you access using array notation, you need to use quotes
+console.log(person.fullName()) // when you access using array notation, you need to use quotes
 
 
 console.log("*******************")
