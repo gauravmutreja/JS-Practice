@@ -19,5 +19,5 @@ console.log(!!d)
 // LESSON 2 - Keywords var, let and const
 
 // Var: Redeclaring & reassigning variables both are posible
-// Let: Redeclaring not but reassigning is possible
+// Let: Redeclaring is not but reassigning is possible
 // Const: Neither redeclaring nor reassigning is possible
